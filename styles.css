@@ -1,0 +1,229 @@
+ body {
+    font-family: 'Oxygen', sans-serif;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 0 0;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+main {
+    position: relative;
+    display: inline-block;
+}
+
+/* NAV BAR */
+nav {
+    font-family: "Roboto";
+    font-weight: 300;
+    background-color: #5d8bb9;
+    color: white;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    border: 1px solid whitesmoke;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav #header {
+    margin: 1rem 3rem 1rem 0;
+    font-size: x-large;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+    
+nav li { 
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1rem;
+    transition-duration: 0.3s;
+}
+
+nav a:hover {
+    background-color: #025290;
+    font-weight: bold;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#homeLink {
+    height: 75px;
+}
+
+#aboutLink {
+    height: 75px;
+}
+
+#mediaLink {
+    height: 75px;
+}
+
+#joinLink {
+    height: 75px;
+}
+
+nav a:visited {
+    color: white;
+}
+
+/* SPLASH IMG */
+#underlay {
+    background-color: black;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+#splash {
+    background-image: url("presentation2.jpg");
+    opacity: 0.6;
+    width: 100%;
+    height: auto;
+}
+
+#overText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    line-height: 1.4;
+    letter-spacing: 0.3rem;
+}
+
+/* ABOUT */
+#us {
+    font-size: 2rem;
+}
+
+#intro {
+    display: flex;
+}
+
+#about {
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+#aboutGray {
+    background-color: #9eb7d0;
+    border-radius:  6px;
+    line-height: 2rem;
+}
+
+#aboutWhite {
+    font-size: 1.25rem;
+    border: 2px solid #025290;
+    border-radius: 6px;
+    margin: 0 1rem 2rem 1rem;
+    padding: 1rem;
+}
+
+#aboutBlue {
+    font-size: 1.25rem;
+    padding: 1rem;
+    margin: 0 1rem 2rem 1rem;
+    background-color: #025290;
+    color: white;
+    border-radius: 6px;
+}
+
+#cloud {
+    margin-bottom: 1rem;
+    max-height: 580px;
+    max-width: 850px;
+}
+
+#cloudBack {
+    background-color: white;
+}
+
+/* MEDIA */
+#media {
+    font-size: 2rem;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    padding: 0 4px;
+  }
+  
+.column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    border-radius: 1%;
+}
+
+/* JOIN */
+#join {
+    margin: 2rem 0 0 0;
+    font-size: 1.5rem;
+}
+
+#invite {
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.5rem;
+}
+
+#design {
+    color: grey;
+}
+
+/* RESPONSIVE SETTINGS */
+@media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+@media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
