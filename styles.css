@@ -67,6 +67,7 @@ nav a {
     cursor: pointer;
     padding: 1rem;
     transition-duration: 0.3s;
+    color: white;
 }
 
 nav a:hover {
@@ -131,15 +132,27 @@ nav a:visited {
     display: flex;
 }
 
+#wouldYou {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#thenJoin {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
 #about {
     font-size: 1.25rem;
     padding: 1rem;
 }
 
 #aboutGray {
-    background-color: #9eb7d0;
-    border-radius:  6px;
+    background-color: #cedcea;
+    border-radius: 6px;
     line-height: 2rem;
+    padding: 0;
+    margin: 0rem 6rem 0rem 6rem;
 }
 
 #aboutWhite {
@@ -211,6 +224,10 @@ nav a:visited {
 
 #design {
     color: grey;
+}
+
+#preEmail {
+    margin-bottom: 0;
 }
 
 /* RESPONSIVE SETTINGS */
