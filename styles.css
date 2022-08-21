@@ -39,33 +39,34 @@ nav {
     height: 70px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 1rem;
 }
 
-nav #header {
-    margin: 1rem 3rem 1rem 0;
-    font-size: x-large;
+p, #header {
+    margin: 0 1rem 0;
+    font-size: 2rem;
+    flex-shrink: 1;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 2rem;
     padding: 0;
     text-align: center;
     }
     
 nav li { 
     display: inline-block;
-    margin: 0;
     padding: 0;
-    font-size: large;
+    font-size: 2rem;
 }
 
 nav a {
     display: block;
     text-decoration: none;
     cursor: pointer;
-    padding: 1rem;
+    padding: 0.5rem;
     transition-duration: 0.3s;
     color: white;
 }
@@ -118,14 +119,14 @@ nav a:visited {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 4rem;
+    font-size: 4.5rem;
     line-height: 1.4;
     letter-spacing: 0.3rem;
 }
 
 /* ABOUT */
 #us {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 #intro {
@@ -184,12 +185,16 @@ nav a:visited {
 
 /* MEDIA */
 #media {
-    font-size: 2rem;
+    font-size: 3rem;
+}
+
+#courier {
+    text-decoration: none;
 }
 
 .link {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 1rem;
     cursor: pointer;
 }
@@ -213,13 +218,17 @@ nav a:visited {
 
 /* JOIN */
 #join {
-    margin: 2rem 0 0 0;
-    font-size: 1.5rem;
+    margin: 2rem 0 2rem 0;
+    font-size: 3rem;
+}
+
+#national {
+    margin: 1rem 0 1rem 0;
 }
 
 #invite {
     margin: 0 1rem 1rem 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 #design {
@@ -227,20 +236,5 @@ nav a:visited {
 }
 
 #preEmail {
-    margin-bottom: 0;
+    margin: 0;
 }
-
-/* RESPONSIVE SETTINGS */
-@media (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-@media (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
